@@ -2,21 +2,23 @@ public class Main {
     public static void main(String[] args) {
         // Задание 1
         System.out.println("Задание 1");
-        for (int i = 1904; i <= 2096; i = i + 4) {
-            System.out.println("Год является високосным " + i);
+        int salary = 29000;
+        int total = 0;
+        for (int i = 1; i <= 12; i++) {
+            total = total + salary;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + total + " рублей.");
         }
 
         // Задание 2
         System.out.println("Задание 2");
-        for (int i = 7; i <= 98; i = i + 7) {
-            System.out.println("Интерация цикла " + i);
+        {
+            int salary2 = 29000;
+            int total2 = 0;
+            for (int i = 1; i <= 12; i++) {
+                total2 = total2 + total2 / 100;
+                total2 = total2 + salary2;
+                System.out.println("Месяц " + i + ", сумма накоплений равна " + total2 + " рублей.");
+            }
         }
-
-        // Задание 3
-        System.out.println("Задание 3");
-        for (int i = 1; i <= 512; i = i * 2) {
-            System.out.println("Интерация цикла " + i);
-        }
-
     }
 }
